@@ -1,0 +1,6 @@
+A IMPLEMENTAR
+*pageup/pagedown
+*bitmaps extras
+*procura de palavras
+
+A FAZER

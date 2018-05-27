@@ -1,0 +1,32 @@
+# Project: Editor de Texto
+# Makefile created by Dev-C++ 4.9.8.1
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = Editor_de_Texto_private.res
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"F:/DevCPP/lib" -mwindows -lalleg 
+INCS =  -I"F:/DevCPP/include"  -I"C:/Documents and Settings/Marcelo Tomio Hama/Desktop/Projeto" 
+CXXINCS =  -I"F:/DevCPP/include/c++"  -I"F:/DevCPP/include/c++/mingw32"  -I"F:/DevCPP/include/c++/backward"  -I"F:/DevCPP/include" 
+BIN  = "Editor de Texto.exe"
+CXXFLAGS = $(CXXINCS) 
+CFLAGS = $(INCS)  -fmessage-length=0
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "Editor de Texto.exe" all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CC) $(LINKOBJ) -o "Editor de Texto.exe" $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+Editor_de_Texto_private.res: Editor_de_Texto_private.rc 
+	$(WINDRES) -i Editor_de_Texto_private.rc -I rc -o Editor_de_Texto_private.res -O coff 

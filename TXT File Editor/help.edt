@@ -1,0 +1,46 @@
+
+            EDITOR DE TEXTOS - Projeto de E.D.
+/--------------------------------------------------------\
+|TELA INICIAL                                            |
+|* Editar - Passa para o modo editor, no qual sao        |
+|inseridos os textos e onde e possivel escolher a cor da |
+|fonte antes de sua entrada;                             |
+|* Help - Exibe o help do editor, suas caracteristicas e |
+|funcionalidades;                                        |
+|* Carregar - Carrega um texto recebendo o seu nome como |
+|parametro;                                              |
+|* Salvar - Salva o arquivo em aberto recebendo um nome  |
+|como parametro;                                         |
+|* Sair - Fecha o editor.                                |
+|                                                        |
+|TELA EDITOR                                             |
+|* E a tela onde sao inseridos os caracteres, pontuacoes,|
+|espacos e numeros. Os numeros acima precedidos de 'L' e |
+|'C' sao respectivamente a posicao da linha e da coluna  |
+|do cursor.                                              |
+|* Teclas de Controle Aceitas                            |
+|   Home   - posiciona no comeco da linha                |
+|   End    - posiciona no fm da linha                    |
+|   Insert - nao implementado                            |
+|   Delete - nao implementado                            |
+|   PagUp  - nao implementado                            |
+|   PagDn  - nao implementado                            |
+|   Setas  - modifica posicao do cursor                  |
+|                                                        |
+|BUGS CONHECIDOS                                         |
+|* Ao se carregar ou salvar um texto, a entrada do seu   |
+|nome nao aceita backspaces;                             |
+\--------------------------------------------------------/
+
+
+
+
+
+
+
+
+
+
+
+
+                                        MARCELO TOMIO HAMA
